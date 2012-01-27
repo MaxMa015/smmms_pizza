@@ -1,6 +1,25 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>MyPaiZZa</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="lib/jquery.mobile-1.0.min.css" type="text/css"/>
+<script type="text/javascript" src="lib/jquery-1.6.4.min.js"></script>
+<script type="text/javascript" src="lib/jquery.mobile-1.0.min.js"></script>
+
+
+            <!-----------Landscape-------------->
+            
+<link rel="stylesheet" type="text/css" href="style/Landscape.css"
+	media="only screen and (orientation:Landscape)">
+    
+              <!-------------Portrait-------------->
+            
+<link rel="stylesheet" type="text/css" href="style/Portrait.css"
+	media="only screen and (orientation:Portrait)"> 
+
+</head>
 <style type="text/css">
 body {
       background:url(bg.png);
@@ -16,18 +35,19 @@ body {
 	  background-repeat:repeat-x;
 	  height:90px;
     }
-</style>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Untitled Document</title>
-</head>
 
+</style>
 <body>
-<table width="100%" height="88" align="center" cellpadding="0" cellspacing="0" border="0" class="ui-bar-f">
-	<tr>
-    	<td align="center"><img src="Pagepizza/header.png" width="768" height="90" /></td>
-    </tr>
-</table>
- 				   <!--pasta Appetizers-->
+<div data-role="header" data-theme="f" align="center">
+<img src="header.png" width="768" height="90" / align="top" > 
+</div>
+
+
+
+						<!---------Landscape------------->
+<div id="Landscape">
+
+   <!--pasta Appetizers-->
       <table  width="994px" align="center" valign="top" style="margin-top:30px" border="0" class="bg">
       	<tr>
         	<td valign="top">
@@ -35,7 +55,7 @@ body {
                    <tr>
                 	<td valign="top"><img src="Pagepizza/ThinCrispy.png" width="265" height="284" /></td>
                    <td valign="top"><img src="Pagepizza/Extremepizza.png" width="267" height="284" /></td>
-                   <td valign="top"><a href="Xpan.html" data-transition="flip"><img src="Pagepizza/x-pan.png" width="451" height="284" /></a></td>
+                   <td valign="top"><a href="Xpan.html" data-transition="fade"><img src="Pagepizza/x-pan.png" width="451" height="284" /></a></td>
                   </tr>
                   
                </table>
@@ -59,5 +79,44 @@ body {
     </tr>
 </table>
           
+
+</div>
+                
+                       
+
+						<!---------Portrait------------->
+<div id="Portrait">
+<table align="center" border="0" cellpadding="0" cellspacing="0">
+<tr>
+		<td>
+        <!----X- pan--------->
+        	<table align="center" border="0" cellpadding="0" cellspacing="0">
+            	<tr>
+                	<td><a href="Xpan.html" data-transition="slide"><img src="Pagepizza/1.png" width="431" height="433" /></a></td>
+                </tr>
+            </table>
+        <!------Pizza Puff------>
+            <table align="center" border="0" cellpadding="0" cellspacing="0">
+            	<tr>
+                	<td><img src="Pagepizza/2.png" width="431" height="409" /></td>
+                </tr>
+            </table>
+		</td>
+        
+      <!---------Thin Crispy,Extreme Pizza,Extra Cheesy,Pan Pizza--------->  
+        <td>
+        <table align="center" border="0" cellpadding="0" cellspacing="0">
+            	<tr>
+                	<td width="307"><img src="Pagepizza/3.png" width="307" height="223" /><img src="Pagepizza/4.png" width="307" height="210" /><img src="Pagepizza/5.png" width="307" height="191" /><img src="Pagepizza/6.png" width="307" height="218" /></td>
+                </tr>
+            </table>
+        </td>
+</tr>
+</table>
+
+</div>
+
+
+
 </body>
 </html>
